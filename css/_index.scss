@@ -1,0 +1,94 @@
+.banner{
+    background:url(../img/Hero.png) no-repeat;
+    background-size: cover;
+    height: 380px;
+}
+// 熱門區域
+.popularList{
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    margin: -28px 65px 49px;
+    padding: 20px 0 26px 18px;
+}
+.popularBtn{
+    padding-left: 25px;
+    li{
+        margin-right: 30px;
+    }
+}
+// 分隔線
+.divider{
+    position: relative;
+    align-self: stretch;
+    height: 24px;
+    background: url(../img/down.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.divider::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #559AC8 0%, #559AC8 50%, transparent 50%);
+    background-size: 15px 1px;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.area{
+    width: 452px;
+    height: 48px;   
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+.list{ 
+    padding: 0 24px 0 40px;
+}
+
+.listItem{
+    width: 48%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    margin-bottom: 36px;
+    margin-right: 16px;
+}
+
+.picture{
+    width: 100%; 
+    height: 155px;  
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end;
+}
+
+.info{
+    padding: 16px 24px 20px 24px;
+}
+.info p:last-child{
+    margin-bottom: 0;
+}
+        
+// 回到最上層
+.goTop {
+    // display: none;
+    position: absolute;
+    right: 43px;
+    bottom: 33px;
+}
+.goTop:hover {
+    cursor   : pointer;
+}
+
+// 頁尾
+footer{
+    background-color: #559AC8;
+    text-align: center;
+}
